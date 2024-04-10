@@ -5,7 +5,7 @@ def console_output(text):
     Output text to the console
     :param text: given text
     """
-    pass
+    print(text)
 
 
 def file_output_builtin(file_path, text):
@@ -14,4 +14,5 @@ def file_output_builtin(file_path, text):
     :param text: given text
     :param file_path: the path to file
     """
-    pass
+    with open(file_path, "w") as file:
+        file.write(text)
